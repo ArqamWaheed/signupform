@@ -7,64 +7,90 @@
     box-sizing: border-box;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-  }
+* {
+  margin: 0;
+  padding: 0;
+}
 
-  body {
-    line-height: 1.5;
-    -webkit-font-smoothing: antialiased;
-    font-family: 'Source Sans Pro', Helvetica, sans-serif;
-  }
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
 
-  img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-  }
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
 
-  input, button, textarea, select {
-    font: inherit;
-  }
+input, button, textarea, select {
+  font: inherit;
+}
 
-  p, h1, h2, h3, h4, h5, h6 {
-    overflow-wrap: break-word;
-  }
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
 
-  #root, #__next {
-    isolation: isolate;
-  }
+#root, #__next {
+  isolation: isolate;
+}
 
 
-  /* ^^^ CSS reset ^^^ */
-  .container {
-    display: flex;
-  }
-  .imagesection > img {
-    height: 100vh;
-    width: 35%;
-    position: relative;
-  }
+/* ^^^ CSS reset ^^^ */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
 
-  .imagecontainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    width: 35%;
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 30vh;
-    
-  }
+.imagesection {
+  position: relative;
+  width: 35%;
+}
 
-  .imagecontainer > img {
-    height: 90%;
-  } 
+.imagesection > img {
+  height: 100vh;
+  width: 100%;
+}
+
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 20vh;
+}
+
+.imagecontainer > img {
+  height: 90%;
+} 
 
 .imagecontainer > p {
     padding-left: 20px;
     font-family: NorseText;
     color: white;
     font-size: 8rem;
+}
+
+.signupform {
+  height: 100vh;
+  width: 65%;
+}
+
+.formdescription {
+  overflow: auto;
+  height: 40vh;
+  background-color: #F0F2F5;
+  align-content: center;
+}
+
+.formdescription > p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  width: 75%;
+  padding-left: 50px;
+  padding-top: 50px;
 }
