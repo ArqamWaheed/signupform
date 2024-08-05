@@ -13,7 +13,7 @@
 }
 
 body {
-  line-height: 1.5;
+  line-height: 1.25;
   -webkit-font-smoothing: antialiased;
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
@@ -66,13 +66,14 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .imagecontainer > img {
   height: 90%;
+  width: 20%;
 } 
 
 .imagecontainer > p {
     padding-left: 20px;
     font-family: NorseText;
     color: white;
-    font-size: 8rem;
+    font-size: calc(5rem + 2vw + 2.2vh);
 }
 
 .signupform {
@@ -82,15 +83,55 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .formdescription {
   overflow: auto;
-  height: 40vh;
+  height: 35vh;
   background-color: #F0F2F5;
   align-content: center;
 }
 
 .formdescription > p {
-  font-size: 1.5rem;
+  font-size: calc(0.4rem + (1.7vh + 1.5vw)/2);
   font-weight: bold;
-  width: 75%;
+  width: 80%;
   padding-left: 50px;
   padding-top: 50px;
 }
+
+.formcontrols {
+  height: 40vh;
+  background-color: white;
+  overflow: auto;
+  padding-top: 50px;
+  box-shadow: inset 0px -2px 10px rgba(0, 0, 0, 0.3); /* Adjust vertical offset for shadow at the bottom */
+}
+
+.submitfooter {
+  height: 25vh;
+  background-color: #F0F2F5;
+}
+
+
+label {
+  text-shadow: 
+  2px 2px 0 #E5E7EB,   
+  -2px -2px 0 #E5E7EB, 
+  2px -2px 0 #E5E7EB,  
+  -2px 2px 0 #E5E7EB;  
+  font-weight: 600px;
+  text-decoration-color: #E5E7EB;
+  width: 39%;
+  margin-bottom: 10px;
+  display: inline-block;
+  margin-left: 50px;
+  overflow: hidden;
+  white-space: nowrap; 
+}
+
+input {
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  width: 25vw;
+  margin-left: 50px;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
