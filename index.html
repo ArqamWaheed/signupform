@@ -19,31 +19,33 @@
             <div class="formdescription">
                 <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br> Sign up <em>now</em> to get started. <br><br> You <em>know</em> you want to.</p>
             </div>
+            <form action="" autocomplete="off">
             <div class="formcontrols">
-                <form action="">
+
                     <label for="firstname">FIRST NAME</label>
                     <label for="lastname">LAST NAME</label>
                     <br>
-                    <input id="firstname" type="text" required>
-                    <input id="lastname" type="text" required>
+                    <input id="firstname" type="text" required minlength="3">
+                    <input id="lastname" type="text" required minlength="3">
                     <br>
                     <label for="email">EMAIL</label>
                     <label for="phonenumber">PHONE NUMBER</label>
                     <br>
                     <input id="email" type="email" required>
-                    <input id="phonenumber" type="tel" required>
+                    <input id="phonenumber" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="xxx-xxx-xxx">
                     <br>
                     <label for="password">PASSWORD</label>
                     <label for="confirmpassword">CONFIRM PASSWORD</label>
                     <br>
-                    <input id="password" type="password" required>
-                    <input id="confirmpassword" type="password" required>
-                </form>
+                    <input id="password" type="password" required placeholder="8 letters minimum" minlength="8">
+                    <input id="confirmpassword" type="password" required minlength="8">
+
             </div>
             <div class="submitfooter">
-                <button>Create Account</button>
+                <button type="submit">Create Account</button>
                 <p>Already have an account? <span>Log in</span></p>
             </div>
+        </form>
         </div>
     </div>
 </body>

@@ -133,6 +133,18 @@ input {
   height: 40px;
 }
 
+input:valid {
+  background-color: rgba(139, 195, 74, 0.25) !important;
+  border: 1px solid #8BC34A;
+}
+
+input:invalid:focus {
+  border: 1px solid #b92326;
+  background-color: rgba(185, 35, 38, 0.25) !important;
+}
+
+
+
 button {
   border-radius: 20px;
   border-color: #E5E7EB;
